@@ -1,35 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-08T11:03:56.201839" rpa="false" schemaversion="5">
-<suite id="s1" name="Test" source="C:\RobotFramework\TestProject\Test">
-<suite id="s1-s1" name="TestCase1" source="C:\RobotFramework\TestProject\Test\TestCase1.robot">
-<test id="s1-s1-t1" name="TEST" line="10">
-<kw name="Logs">
-<msg time="2024-07-08T11:03:56.230477" level="FAIL">No keyword with name 'Logs' found. Did you mean:
-    BuiltIn.Log</msg>
-<arg>This is my first test case under Test</arg>
-<status status="FAIL" start="2024-07-08T11:03:56.230477" elapsed="0.000000">No keyword with name 'Logs' found. Did you mean:
-    BuiltIn.Log</status>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-08T12:15:57.310257" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCase1" source="C:\RobotFramework\TestProject\Test\TestCase1.robot">
+<test id="s1-t1" name="TEST" line="19">
+<kw name="Log In My Username">
+<msg time="2024-07-08T12:15:57.331521" level="TRACE">Arguments: [  ]</msg>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-08T12:15:57.331521" level="TRACE">Arguments: [ "username=testuser password=demo'[username]'" ]</msg>
+<msg time="2024-07-08T12:15:57.331521" level="INFO">username=testuser password=demo'[username]'</msg>
+<msg time="2024-07-08T12:15:57.331521" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}'\[username]'</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-08T12:15:57.331521" elapsed="0.000000"/>
+</kw>
+<msg time="2024-07-08T12:15:57.331521" level="TRACE">Return: None</msg>
+<status status="PASS" start="2024-07-08T12:15:57.331521" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-08T12:15:57.331521" level="TRACE">Arguments: [ "username=testuser password=demo'[password]'" ]</msg>
+<msg time="2024-07-08T12:15:57.331521" level="INFO">username=testuser password=demo'[password]'</msg>
+<msg time="2024-07-08T12:15:57.331521" level="TRACE">Return: None</msg>
+<arg>${DICTIONARY}'\[password]'</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-08T12:15:57.331521" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-08T12:15:57.331521" level="TRACE">Arguments: [ 'My Test Variable' ]</msg>
+<msg time="2024-07-08T12:15:57.332518" level="INFO">My Test Variable</msg>
+<msg time="2024-07-08T12:15:57.332518" level="TRACE">Return: None</msg>
+<arg>${MY-VARIABLE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-08T12:15:57.331521" elapsed="0.000997"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-08T12:15:57.332518" level="TRACE">Arguments: [ '//input[@title="search2"]' ]</msg>
+<msg time="2024-07-08T12:15:57.332518" level="INFO">//input[@title="search2"]</msg>
+<msg time="2024-07-08T12:15:57.332518" level="TRACE">Return: None</msg>
+<arg>${GOOGLE-SEARCH-FIELD}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-08T12:15:57.332518" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-07-08T12:15:57.332518" level="TRACE">Arguments: [ 'test3' ]</msg>
+<msg time="2024-07-08T12:15:57.332518" level="INFO">test3</msg>
+<msg time="2024-07-08T12:15:57.332518" level="TRACE">Return: None</msg>
+<arg>${LIST}[2]</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-07-08T12:15:57.332518" elapsed="0.000000"/>
 </kw>
 <tag>demo</tag>
-<status status="FAIL" start="2024-07-08T11:03:56.229478" elapsed="0.000999">No keyword with name 'Logs' found. Did you mean:
-    BuiltIn.Log</status>
+<status status="PASS" start="2024-07-08T12:15:57.330528" elapsed="0.001990"/>
 </test>
 <doc>This is my first test case</doc>
-<status status="FAIL" start="2024-07-08T11:03:56.224484" elapsed="0.006977"/>
-</suite>
-<meta name="Randomized">Suites and tests (seed 8528705868918202111)</meta>
-<status status="FAIL" start="2024-07-08T11:03:56.202828" elapsed="0.029629"/>
+<status status="PASS" start="2024-07-08T12:15:57.311253" elapsed="0.021958"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">demo</stat>
+<stat pass="1" fail="0" skip="0">demo</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCase1">Test.TestCase1</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCase1">TestCase1</stat>
 </suite>
 </statistics>
 <errors>
