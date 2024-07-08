@@ -9,4 +9,4 @@ Library     OperatingSystem
 *** Test Cases ***
 TEST 
     [Tags]  demo
-    Logs     This is my first test case under Test
+    Log     This is my first test case under Test
